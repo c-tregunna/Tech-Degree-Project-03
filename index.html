@@ -1,12 +1,167 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Code Review</title>
+	<meta name="viewport" content="width=device_width, initial_scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
   	<link rel="stylesheet" href="css/normalize.css">
   	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<header class="main-header">
+		<h1>The Code Review</h1>
+	</header>
 
+
+	<section class="intro">
+		<h2>Signup for our newsletter</h2>
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+	</section>
+
+	<hr>
+		<form class="registration" action="index.html" method="post">
+
+			<fieldset class="contact-info">
+				<legend class="contact-head">Contact Information</legend>
+				<div class="form-flex">
+					<label for="full_name">Full Name</label>
+			        <input type="text" id="full_name" name="user_name" placeholder="Required">
+		    	</div>
+
+		        <div class="form-flex">
+			        <label for="mail">Email Address</label>
+			        <input type="email" id="mail" name="user_email" placeholder="Required">
+		    	</div>
+
+		        <div class="form-flex">
+			        <label for="phone">Phone Number</label>
+			        <input type="text" id="phone" name="user_phone">
+		    	</div>
+
+		        <div class="form-flex">
+			        <label for="street_address">Street Address</label>
+			        <input type="text" id="street_address" name="user_address">
+		    	</div>
+
+		        <div class="form-flex">
+			        <label for="city">City</label>
+			        <input type="text" id="city" name="user_city">
+		    	</div>
+
+		        <div class="form-flex">
+			        <label for="county">County</label>
+		            <select id="county" name="user_county" placeholder="Choose County">
+		            <!-- <option>Choose County</option> -->
+		            <optgroup label="East">
+		              <option value="cambridgshire">Cambridgeshire</option>
+		              <option value="essex">Essex</option>
+		              <option value="hertfordshire">Hertfordshire</option>
+		              <option value="norfolk">Norfolk</option>
+		              <option value="suffolk">Suffolk</option>
+		            </optgroup>
+
+		            <optgroup label="East Midlands">
+		              <option value="leicestershire">Leicestershire</option>
+		              <option value="northamptonshire">Northamptonshire</option>
+		              <option value="nottinghamshire">Nottinghamshire</option>
+		              <option value="rutland">Rutland</option>
+		            </optgroup>  
+
+		            <optgroup label="London">
+		              <option value="city_of_london">City of London</option>
+		              <option value="greater_london">Greater London</option>
+		            </optgroup>
+
+		            <optgroup label="North East">
+		              <option value="county_durham">County Durham</option>
+		              <option value="northumberland">Northumberland</option>
+		              <option value="tyne_and_wear">Tyne and Wear</option>
+		          	</optgroup>
+
+		            <optgroup label="North West">
+		              <option value="cumbria">Cumbria</option>
+		              <option value="greater_manchester">Greater Manchester</option>
+		              <option value="lancashire">Lancashire</option>
+		              <option value="merseyside">Merseyside</option>
+		            </optgroup>
+
+		            <optgroup label="South East">
+		              <option value="berkshire">Berkshire</option>
+		              <option value="buckinghamshire">Buckinghamshire</option>
+		              <option value="east_sussex">East Sussex</option>
+		              <option value="hampshire">Hampshire</option>
+		              <option value="isle_of_wight">Isle of Wight</option>
+		              <option value="kent">Kent</option>
+		              <option value="oxfordshire">Oxfordshire</option>
+		              <option value="surrey">Surrey</option>
+		              <option value="west_sussex">West Sussex</option>
+		            </optgroup>
+
+		            <optgroup label="South West">
+		              <option value="bristol">Bristol</option>
+		              <option value="cornwall">Cornwall</option>
+		              <option value="devon">Devon</option>
+		              <option value="dorset">Dorset</option>
+		              <option value="gloucestershire">Gloucestershire</option>
+		              <option value="somerset">Somerset</option>
+		              <option value="wiltshire">Wiltshire</option>
+		            </optgroup>
+
+		            <optgroup label="West Midlands">
+		              <option value="cheshire">Cheshire</option>
+		              <option value="derbyshire">Derbyshire</option>
+		              <option value="herefordshire">Herefordshire</option>
+		              <option value="shropshire">Shropshire</option>
+		              <option value="staffordshire">Staffordshire</option>
+		              <option value="warwickshire">Warwickshire</option>
+		              <option value="west_midlands">West Midlands</option>
+		              <option value="worcestershire">Worcestershire</option>
+		            </optgroup>
+
+		            <optgroup label="Yorkshire and Humber">
+		              <option value="east_riding_of_yorkshire">East Riding of Yorkshire</option>
+		              <option value="Lincolnshire">Lincolnshire</option>
+		              <option value="north_yorkshire">North Yorkshire</option>
+		              <option value="south_yorkshire">South Yorkshire</option>
+		              <option value="west_yorkshire">West Yorkshire</option>
+		          	</optgroup>
+
+		          	</select>
+	      		</div>
+
+	      		<div class="form-flex">
+	          		<label for="post_code">Post Code</label>
+		      		<input type="text" id="post_code" name="user_postcode" class="post-code">
+		      	</div>
+
+	      </fieldset>
+
+	      <fieldset>
+	      	<legend>Newsletter</legend>
+	      	<p>Select the newsletters you would like to recieve</p>
+		      <input type="checkbox" id="html_news" value="html" name="newsletter_html"><label for="html_news">HTML News</label><br>
+	          <input type="checkbox" id="css_news" value="css" name="newsletter_css"><label for="css_news">CSS News</label><br>
+	          <input type="checkbox" id="javascript_news" value="javascript" name="newsletter_javascript"><label for="javascript_news">Javascript News</label>
+          </fieldset>
+
+          <p>Newsletter format</p>
+          <fieldset>
+	          <input type="radio" id="html" value="html" name="format"><label for="html">HTML</label><br>
+	          <input type="radio" id="plain_text" value="plain_text" name="format"><label for="plain_text">Plain text</label>
+          </fieldset>
+
+          <fieldset>
+          	<p>Other topics you'd like to hear about</p>
+          	<textarea id="other_topics" name="other_topics"></textarea>
+          </fieldset>
+
+          <button type="submit">Sign Up</button>
+
+		</form>
+
+	<footer class="main-footer">
+		<p>Copyright The Code Review</p>
+	</footer>
 </body>
 </html>

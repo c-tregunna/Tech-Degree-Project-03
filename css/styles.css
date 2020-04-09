@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+ /*  PAGE STYLES  */
+ 
+body {
+  color: black;
+  background-color: #fff;
+  font: 1em 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 50px;
+}
+
+h2 {
+	font-size: 3.25em;
+	margin: 30px 0 0 10px;
+	padding: 0 10px;
+}
+
+/*  HEADER AND INTRO STYLES  */
+
+.main-header {
+	background-color: #2d3945;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.intro {
+	width: 90%;
+	border-bottom: 8px solid black;
+	margin: auto;
+}
+
+.intro p {
+	font-size: 2.75em;
+	color: #aaa;
+	font-weight: 300;
+	margin: 20px 70px;
+}
+
+hr {
+	width: 90%;
+	border: 2px solid black;
+}
+
+/*  FORM STYLES  */
+
+form {
+	width: 90%;
+	margin: 8px auto;
+	border: none;
+	padding-top: 20px;
+}
+
+fieldset {
+	border: none;
+}
+
+.contact-head {
+	text-align: left;
+	font-size: 2.25em;
+	margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+textarea,
+select {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 4em;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #e8eeef;
+  color: #777;
+}
+
+input.post-code {
+	max-width: 50%;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+	color: #bbb;
+	text-align: right;
+	font-size: .5em;
+}
+
+label {
+	font-size: 1.75em;
+	font-weight: 300;
+	margin: 10px 0;
+	color: ;
+}
+
+
+/*  FLEXBOX STYLES  */
+
+.main-header,
+.intro,
+.main-footer
+ {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.form-flex {
+	display: flex;
+	flex-direction: column;
+}
+

@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+ /*  PAGE STYLES  */
+body {
+  color: black;
+  background-color: #fff;
+  font: 1em 'Josefin Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.main-header,
+.main-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-header {
+	background-color: #2d3945;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.25em;
+	display: inline-block;
+	margin: 30px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.25em;
+}
+
+/*  TOP CONTENT SECTIONS  */
+
+/*.intro {
+	border-bottom: 4px solid black;
+	width: 90%;
+	margin: auto;
+}
+
+.contact-form {
+	border-top: 2px solid black;
+	width: 90%;
+	margin: 5px auto;
+	text-align: justify;
+}
+
+/*  FORM  */
+
+form {
+	width: 90%;
+	margin: 0 auto;
+}
+
+input,
+select {
+	margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid white;
+}
+label {
+	text-align: left;
+	width: auto;
+}
+
+.contact-info {
+  padding: 50px 50px 35px 50px;
+}
+
+.contact-info .form-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info label {
+  margin-bottom: 10px;
+}
+
+.contact-info input {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+	height: 50px;
+}
+
+
+/*  MEDIA QUERIES  */
+
+@media (min-width: 769px) { 
+
+.contact-info,
+.form-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.form-flex {
+	justify-content: space-between;
+}
+
+
+input {
+	background-color: #eee;
+	flex-basis: 75%
+}
+
+select {
+	flex-basis: 75%;
+}
+
+label {
+	flex-basis: 25%;
+}
+
+}
