@@ -119,6 +119,12 @@ input[type="checkbox"] {
 	margin: 20px 20px 0 0;
 }
 
+select {
+	background-image: url('../img/arrow.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
