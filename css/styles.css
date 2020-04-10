@@ -11,14 +11,14 @@ body {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1.25em;
 	text-transform: uppercase;
 	display: inline-block;
 	margin: 50px;
 }
 
 h2 {
-	font-size: 1.75rem;
+	font-size: 1.1em;
 	margin: 30px 0 0 10px;
 	padding: 0 10px;
 }
@@ -34,15 +34,15 @@ h2 {
 
 .intro {
 	width: 90%;
-	border-bottom: 8px solid black;
+	border-bottom: 6px solid black;
 	margin: auto;
 }
 
 .intro p {
-	font-size: 1.25rem;
+	font-size: 1em;
 	color: #aaa;
 	font-weight: 300;
-	margin: 20px 70px;
+	margin: 20px;
 }
 
 .main-footer {
@@ -74,7 +74,7 @@ fieldset.contact-info {
 .contact-head,
 .newsletter {
 	text-align: left;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 
@@ -86,7 +86,7 @@ select {
   width: 100%;
   border: none;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   height: auto;
   margin-top: 10px;
   padding: 15px;
@@ -103,12 +103,12 @@ input[type="text"]::placeholder,
 input[type="email"]::placeholder {
 	color: #bbb;
 	text-align: right;
-	font-size: .5rem;
+	font-size: .5em;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-	margin: 20px 50px 0 0;
+	margin: 20px 20px 0 0;
 }
 
 input[type="text"]:focus,
@@ -121,10 +121,14 @@ select:focus {
 }
 
 label {
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	font-weight: 300;
 	margin: 10px 0;
 	padding-top: 15px;
+}
+
+.newsletter-option {
+	display: block;
 }
 
 .select-county {
@@ -132,7 +136,7 @@ label {
 	  -moz-appearance: none;
 	  appearance: none;
 	  padding: 20px 5px;
-	  font-size: 1rem;
+	  font-size: 1em;
 }
 
 button {
@@ -140,7 +144,7 @@ button {
 	background-color: #66cccc;
 	padding: 20px 0;
 	border-radius: 5px;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	margin-top: 30px;
 	color: white;
 }
@@ -168,32 +172,30 @@ button {
 @media (min-width: 768px) {
 
 	.intro {
+	width: 60%;
   	max-width: 900px;
   }
 
 	form {
+	width: 60%;
     max-width: 900px;
-  	}
+  }
 
-  	.contact-info .form-flex {
+  	.contact-info,
+  	.form-flex {
     flex-direction: row;
   }
 
-  .contact-info input,
-  .contact-info select {
+    .contact-info input,
+    .contact-info select {
     flex-grow: 1;
     flex-basis: 75%;
   }
 
-  .contact-info label {
+    .contact-info label {
     flex-basis: 25%;
     height: 50px;
     margin: auto 0;
   }
-
-   .post-code {
-    max-width: 25%;
-  }
-
 }
 

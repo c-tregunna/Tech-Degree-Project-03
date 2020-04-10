@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>The Code Review</title>
-	<meta name="viewport" content="width=device_width, initial_scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
-  	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
-  	<link rel="stylesheet" href="css/normalize.css">
-  	<link rel="stylesheet" href="css/styles.css">
-</head>
+    <head>
+	     <meta charset="utf-8">
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <title>The Code Review</title>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
+	  	<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+	  	<link rel="stylesheet" href="css/normalize.css">
+	  	<link rel="stylesheet" href="css/styles.css">
+	</head>
 <body>
 	<header class="main-header">
 		<h1>The Code Review</h1>
@@ -50,7 +51,7 @@
 
 		        <div class="form-flex">
 			        <label for="county">County</label>
-		            <select id="county" name="user_county" placeholder="Choose County" class="select-county">
+		            <select id="county" name="user_county" class="select-county">
 		            <option>Choose County</option>
 		            <optgroup label="East">
 		              <option value="cambridgshire">Cambridgeshire</option>
@@ -138,16 +139,16 @@
 
 	      <fieldset>
 	      	<legend class="newsletter">Newsletter</legend>
-	      	<p>Select the newsletters you would like to recieve</p>
+	      	<label class="newsletter-option">Select the newsletters you would like to recieve</label>
 		      <input type="checkbox" id="html_news" value="html" name="newsletter"><label for="html_news" class="boxes">HTML News</label><br>
 	          <input type="checkbox" id="css_news" value="css" name="newsletter"><label for="css_news" class="boxes">CSS News</label><br>
 	          <input type="checkbox" id="javascript_news" value="javascript" name="newsletter"><label for="javascript_news" class="boxes">Javascript News</label>
 
-          <p>Newsletter format</p>
+          <label class="newsletter-option">Newsletter format</label>
 	          <input type="radio" id="html" value="html" name="format"><label for="html" class="boxes">HTML</label><br>
 	          <input type="radio" id="plain_text" value="plain_text" name="format"><label for="plain_text" class="boxes">Plain text</label>
 
-          	<p>Other topics you'd like to hear about</p>
+          	<label class="newsletter-option">Other topics you'd like to hear about</label>
           	<label for="other_topics"></label>
           	<textarea id="other_topics" name="other_topics"></textarea>
        
