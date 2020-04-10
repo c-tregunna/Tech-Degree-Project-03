@@ -52,7 +52,7 @@
 		        <div class="form-flex">
 			        <label for="county">County</label>
 		            <select id="county" name="user_county" placeholder="Choose County">
-		            <!-- <option>Choose County</option> -->
+		            <option>Choose County</option>
 		            <optgroup label="East">
 		              <option value="cambridgshire">Cambridgeshire</option>
 		              <option value="essex">Essex</option>
@@ -138,25 +138,22 @@
 	      </fieldset>
 
 	      <fieldset>
-	      	<legend>Newsletter</legend>
+	      	<legend class="newsletter">Newsletter</legend>
 	      	<p>Select the newsletters you would like to recieve</p>
 		      <input type="checkbox" id="html_news" value="html" name="newsletter_html"><label for="html_news">HTML News</label><br>
 	          <input type="checkbox" id="css_news" value="css" name="newsletter_css"><label for="css_news">CSS News</label><br>
 	          <input type="checkbox" id="javascript_news" value="javascript" name="newsletter_javascript"><label for="javascript_news">Javascript News</label>
-          </fieldset>
 
           <p>Newsletter format</p>
-          <fieldset>
 	          <input type="radio" id="html" value="html" name="format"><label for="html">HTML</label><br>
 	          <input type="radio" id="plain_text" value="plain_text" name="format"><label for="plain_text">Plain text</label>
-          </fieldset>
 
-          <fieldset>
           	<p>Other topics you'd like to hear about</p>
           	<textarea id="other_topics" name="other_topics"></textarea>
-          </fieldset>
+       
 
-          <button type="submit">Sign Up</button>
+          	<button type="submit">Sign Up</button>
+          </fieldset>
 
 		</form>
 
