@@ -11,14 +11,14 @@ body {
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 2rem;
 	text-transform: uppercase;
 	display: inline-block;
 	margin: 50px;
 }
 
 h2 {
-	font-size: 3.25em;
+	font-size: 1.75rem;
 	margin: 30px 0 0 10px;
 	padding: 0 10px;
 }
@@ -39,21 +39,16 @@ h2 {
 }
 
 .intro p {
-	font-size: 2.75em;
+	font-size: 1.25rem;
 	color: #aaa;
 	font-weight: 300;
 	margin: 20px 70px;
 }
 
 .main-footer {
-	font-size: 2em;
+	font-size: 1em;
 	color: #aaa;
 	font-weight: 300;
-}
-
-hr {
-	width: 90%;
-	border: 2px solid black;
 }
 
 /*  FORM STYLES  */
@@ -61,8 +56,9 @@ hr {
 form {
 	width: 90%;
 	margin: 8px auto;
-	border: none;
+	outline: none;
 	padding-top: 20px;
+	border-top: 2px solid black;
 }
 
 fieldset {
@@ -78,24 +74,21 @@ fieldset.contact-info {
 .contact-head,
 .newsletter {
 	text-align: left;
-	font-size: 2.5em;
-	margin-bottom: 30px;
+	font-size: 1.5rem;
 }
 
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-input[type="search"],
+input[type="tel"],
 textarea,
 select {
   width: 100%;
   border: none;
   border-radius: 5px;
-  font-size: 4em;
+  font-size: 1.5rem;
   height: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
   padding: 15px;
   background-color: #e8eeef;
   color: #777;
@@ -103,30 +96,43 @@ select {
 
 input.post-code {
 	max-width: 50%;
+	margin-right: 30px;
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
 	color: #bbb;
 	text-align: right;
-	font-size: .5em;
+	font-size: .5rem;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-	width: 30px;
-	height: 30px;
 	margin: 20px 50px 0 0;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border: 3px solid #2d3945;
+}
+
 label {
-	font-size: 1.75em;
+	font-size: 1.1rem;
 	font-weight: 300;
 	margin: 10px 0;
+	padding-top: 15px;
 }
 
 .select-county {
-	font-size: 2em;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  appearance: none;
+	  padding: 20px 5px;
+	  font-size: 1rem;
 }
 
 button {
@@ -134,8 +140,9 @@ button {
 	background-color: #66cccc;
 	padding: 20px 0;
 	border-radius: 5px;
-	font-size: 3em;
+	font-size: 1.5rem;
 	margin-top: 30px;
+	color: white;
 }
 
 
@@ -158,37 +165,35 @@ button {
 
 /*  MEDIA QUERIES  */
 
-@media (min-width: 769px) { 
+@media (min-width: 768px) {
 
-	body {
-		width: 80%;
-		margin: auto;
-	}
+	.intro {
+  	max-width: 900px;
+  }
 
-.contact-info,
-.form-flex {
-	display: flex;
-	flex-direction: row;
+	form {
+    max-width: 900px;
+  	}
+
+  	.contact-info .form-flex {
+    flex-direction: row;
+  }
+
+  .contact-info input,
+  .contact-info select {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+
+  .contact-info label {
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+  }
+
+   .post-code {
+    max-width: 25%;
+  }
+
 }
-
-.form-flex {
-	justify-content: space-between;
-}
-
-
-input {
-	background-color: #eee;
-	flex-basis: 75%
-}
-
-select {
-	flex-basis: 75%;
-}
-
-label {
-	flex-basis: 25%;
-}
-
-}
-
 
