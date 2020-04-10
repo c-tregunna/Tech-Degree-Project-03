@@ -123,7 +123,10 @@ label {
 	font-size: 1.75em;
 	font-weight: 300;
 	margin: 10px 0;
-	color: ;
+}
+
+.select-county {
+	font-size: 2em;
 }
 
 button {
