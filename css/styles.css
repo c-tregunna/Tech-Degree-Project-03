@@ -3,7 +3,7 @@
 }
 
  /*  PAGE STYLES  */
- 
+
 body {
   color: black;
   background-color: #fff;
@@ -85,7 +85,7 @@ input[type="tel"],
 textarea,
 select {
   width: 100%;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 5px;
   font-size: 1.5em;
   height: auto;
@@ -132,7 +132,7 @@ textarea:focus,
 select:focus {
 	outline: none;
 	border: 3px solid #2d3945;
-	background-color: #e0e0e0; 
+	background-color: #e0e0e0;
 	transition: all .5s;
 }
 
